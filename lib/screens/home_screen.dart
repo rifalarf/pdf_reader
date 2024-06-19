@@ -6,16 +6,18 @@ import 'package:pdf_reader/providers/pdf_provider.dart';
 import 'package:pdf_reader/widgets/pdf_list_item.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final pdfProvider = Provider.of<PdfProvider>(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('PDF Reader'),
+        title: const Text('PDF Reader'),
         actions: [
           IconButton(
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () async {
               FilePickerResult? result = await FilePicker.platform
                   .pickFiles(type: FileType.custom, allowedExtensions: ['pdf']);

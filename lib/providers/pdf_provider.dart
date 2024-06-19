@@ -4,7 +4,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:pdf_reader/models/pdf_model.dart';
 
 class PdfProvider with ChangeNotifier {
-  List<PdfModel> _pdfs = [];
+  final List<PdfModel> _pdfs = [];
   List<PdfModel> get pdfs => _pdfs;
 
   PdfProvider() {

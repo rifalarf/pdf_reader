@@ -7,7 +7,7 @@ import 'package:pdf_reader/screens/pdf_view_screen.dart';
 class PdfListItem extends StatelessWidget {
   final PdfModel pdf;
 
-  PdfListItem({required this.pdf});
+  const PdfListItem({super.key, required this.pdf});
 
   @override
   Widget build(BuildContext context) {
